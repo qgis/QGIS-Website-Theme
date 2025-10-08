@@ -323,7 +323,7 @@ a.is-active > span {
 /* votes in plugin listing */
 .star-ratings
 {
-    background  : url("../../images/empty_star_16.png") repeat-x;
+    background  : url("../images/empty_star_16.png") repeat-x;
     height      : 16px;
     line-height : 0;
     width       : 80px;
@@ -331,7 +331,7 @@ a.is-active > span {
 
 }
 .rating {
-    background: url("../../images/star_16.png") repeat-x;
+    background: url("../images/star_16.png") repeat-x;
     float: left;
     height: 16px;
     display:block;
