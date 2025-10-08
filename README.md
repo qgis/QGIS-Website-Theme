@@ -10,16 +10,6 @@ This repository is intended to be used as a **Git submodule** (or linked in deve
 - [Repository structure](#repository-structure)  
 - [Quick start](#quick-start)  
 - [Development workflows](#development-workflows)  
-  - [Edit inside submodule (fast)](#edit-inside-submodule-fast)  
-  - [Symlink for cross-project live editing](#symlink-for-cross-project-live-editing)  
-  - [Use a development branch](#use-a-development-branch)  
-- [Building / compiling SCSS → CSS](#building--compiling-scss--css)  
-- [Using the theme in your project](#using-the-theme-in-your-project)  
-- [Updating the theme in projects](#updating-the-theme-in-projects)  
-- [Versioning & releases](#versioning--releases)  
-- [Troubleshooting](#troubleshooting)  
-- [License](#license)  
-- [Contributing](#contributing)  
 
 ---
 
@@ -28,12 +18,8 @@ This repository is intended to be used as a **Git submodule** (or linked in deve
 ```
 QGIS-Website-Theme/
 ├── scss/           # Primary SCSS entrypoints + partials (source)
-├── sass/           # (Optional) SASS files if you use indented syntax
-├── css/            # Compiled CSS files (optional, recommended to publish)
-├── fonts/          # Web fonts used by the theme
+├── webfonts/          # Web fonts used by the theme
 ├── images/         # Logos, icons, screenshots, etc.
-├── package.json    # Optional: build/watch scripts (if using npm)
-├── .gitignore
 └── README.md
 ```
 
