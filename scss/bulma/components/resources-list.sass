@@ -1,4 +1,4 @@
-.plugins-list-table, .versions-list-table
+.resources-list-table, .versions-list-table
   color: inherit
   tr:hover
     background-color: #ECF1F4
@@ -13,6 +13,8 @@
     width: 150px
     overflow: hidden
     text-overflow: ellipsis
+  .object-thumbnail
+    min-width: 50px
   .author
     display: block
     white-space: nowrap
@@ -22,11 +24,13 @@
   .pointer
     cursor: pointer
 
-.plugins-list-grid
-  // .card:hover
-  //   background-color: #ECF1F4
-  //   cursor: pointer
+.resources-list-grid
+  .card:hover
+    box-shadow: $shadow-hover
+    cursor: pointer
   .card
+    transition: all 0.3s ease
+    border: 1px solid $border
     +tablet
       height: 100%
     .media-content
@@ -37,6 +41,8 @@
       width: 200px
       overflow: hidden
       text-overflow: ellipsis
+    img
+      object-fit: cover
   
   .right-ribbon
     position: absolute
@@ -113,7 +119,7 @@
     border-top: 3px solid $danger
 
 div
-  &.plugins-list-table, .versions-list-table
+  &.resources-table, .versions-list-table
     background: #f4f7f978
     padding: 2rem
     border-radius: 10px
@@ -315,13 +321,33 @@ div
   border-right: 3px solid #4D6370
   border-top: 3px solid #4D6370
 
-.table-container
-  max-width: 100%
-  overflow: auto
-  max-height: 50dvh
-  thead
-    position: sticky
-    top: 0
-    background: white
-    padding-top: 3rem
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+// .table-container
+//   max-width: 100%
+//   overflow: auto
+//   max-height: 50dvh
+//   thead
+//     position: sticky
+//     top: 0
+//     background: white
+//     padding-top: 3rem
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+//     z-index: 1
+
+table
+  width: 100%
+  border-collapse: collapse
+
+thead th
+  background-color: #fff // Optional: Background color
+  transition: all 0.3s ease
+
+.sticky-header
+  position: fixed
+  z-index: 10
+
+.list-options
+  position: sticky
+  top: 112px
+  background-color: #fff // Optional: Background color
+  transition: all 0.3s ease
+  z-index: 10

@@ -6,7 +6,7 @@
 .sidebar
     position: sticky
     overflow-y: scroll  // TODO: unnecessary scroll on mobile and FF windows
-    top: 100px
+    top: 125px
     max-height: calc(100vh - 175px)
     padding-bottom: 30px
     &::-webkit-scrollbar
@@ -112,19 +112,19 @@
         position: relative
         z-index: 3
         border-radius: 10px
-        margin-left: 0.75rem
+        // margin-left: 0.75rem
         max-width: fit-content
 
         &.open
             background-color: #ecf1f498
 
         span::after
-            content: url("../images/ham.svg")
+            content: url("../../images/ham.svg")
             margin-left: 10px
             vertical-align: middle
 
         &.open span::after
-            content: url("../images/close.svg")
+            content: url("../../images/close.svg")
 
     .sidebar > ul
         padding: 1rem 
