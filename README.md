@@ -33,7 +33,7 @@ QGIS-Website-Theme/
 From your project repository:
 
 ```bash
-git submodule add https://github.com/<org-or-user>/QGIS-Website-Theme.git theme
+git submodule add https://github.com/qgis/QGIS-Website-Theme.git theme
 git submodule update --init --recursive
 ```
 
